@@ -1,0 +1,12 @@
+textarea {
+  font-size: 13px;
+  background-color: #ebebeb;
+}
+
+.error-hidden {
+  display: none;
+}
+
+span {
+  font-size: 10 !important;
+}

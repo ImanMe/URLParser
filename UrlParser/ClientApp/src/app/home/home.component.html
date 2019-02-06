@@ -1,0 +1,36 @@
+<div class="form-group">
+  <label for="">URL</label>
+
+  <textarea class="form-control form-control-lg" placeholder="Paste the url here" [(ngModel)]="url" oninput='this.style.height = "";this.style.height = this.scrollHeight + "px"'></textarea>
+  <span class="text-muted" [class.error-hidden]="!isError">The URL you entered, is not a valid URL.</span>
+  <br>
+  <br>
+  <div class="">
+    <button type="button" class="btn btn-primary" style="min-width: 170px; margin-right: 10px" (click)="onParse()">Parse</button>
+    <button type="button" class="btn btn-outline-secondary" style="min-width: 120px" (click)="onClear()">Clear</button>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-7">
+    <div class="table-responsive" [hidden]="tableVisible">
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Key</th>
+            <th>Value</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let key of refrenceKeys">
+            <td style="padding:0; vertical-align:center">{{key}}</td>
+            <td style="padding:0"><input [disabled]="isInputDisable" style="width:100%" class="form-control-sm"
+                [(ngModel)]="queryObj[key]" (keyup)="onSave()"></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div class="col-md-5">
+  </div>
+</div>

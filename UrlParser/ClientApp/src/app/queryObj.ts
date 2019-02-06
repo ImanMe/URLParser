@@ -1,0 +1,28 @@
+export class QueryObj {
+  APIKey: string = "";
+  Signature: string = "";
+  PartnerCode: string = "";
+  PartnerDealerID: string = "";
+  PostalCode: string = "";
+  LanguageCode: string = "";
+  CashPrice: string = "";
+  MSRP: string = "";
+  AssetCode: string = "";
+  VIN: string = "";
+  VehicleConditionCode: string = "";
+  ACode: string = "";
+  VehicleYear: string = "";
+  VehicleMake: string = "";
+  VehicleModelNumber: string = "";
+  VehicleModel: string = "";
+  VehicleBodyStyle: string = "";
+  VehicleTrim: string = "";
+  VehiclePackageCode: string = "";
+  ProductId: string = "";
+  AnnualKilometers: string = "";
+  IncludeTaxes: string = "";
+  TradeInAllowance: string = "";
+  LienAmount: string = "";
+  PaymentOptionsShuffleKey: string = "";
+  InitialRequest: string = "";
+}
